@@ -11,10 +11,6 @@ const FormWithCustomHook = () => {
 
     const {username, email, password} = formState;
 
-
-
-
-
     return (
 
         <>
