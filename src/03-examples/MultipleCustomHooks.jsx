@@ -1,4 +1,3 @@
-import { useEffect } from "react"
 import { useCounter, useFetch } from "../hooks"
 import Loading from "./Loading";
 import Quote from "./Quote";
