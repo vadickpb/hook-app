@@ -3,19 +3,7 @@ import TodoAdd from "./TodoAdd"
 import TodoList from "./TodoList"
 import { todoReducer } from "./todoReducer"
 
-const initialState = [
-    // {
-    //     id: new Date().getTime() * 3,
-    //     description: "Limpiar la casa",
-    //     done: false
-    // },
-    // {
-    //     id: new Date().getTime() * 2,
-    //     description: "salir de compras",
-    //     done: false
-    // },
-
-]
+const initialState = []
 
 const init = () => {
     return JSON.parse(localStorage.getItem('todos')) || []
@@ -43,6 +31,16 @@ const TodoApp = () => {
         })
     }
 
+    const handleToggleTodo = (id) => {
+
+        // console.log(id);
+
+        dispatch({
+            type: '[TODO] Toggle Todo',
+            payload: id
+        })
+    }
+
 
 
     return (
@@ -53,7 +51,7 @@ const TodoApp = () => {
             <div className="row">
                 <div className="col-7">
                     {/* Todo List */}
-                    <TodoList todos = {todos} onDeleteTodo = {handleDeleteTodo}/>
+                    <TodoList todos = {todos} onDeleteTodo = {handleDeleteTodo} onToggleTodo = {handleToggleTodo}/>
                 </div>
 
                 <div className="col-5">

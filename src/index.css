@@ -8,3 +8,7 @@ button {
   margin: 10px;
 }
 
+.item-text-todo {
+  text-decoration: line-through;
+}
+
