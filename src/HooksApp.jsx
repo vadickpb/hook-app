@@ -1,5 +1,6 @@
 import React from 'react'
-import TodoApp from './06-reducer/TodoApp'
+import MainApp from './07-context/MainApp'
+// import TodoApp from './06-reducer/TodoApp'
 // import Memorize from './05-Memorize/Memorize'
 // import FocusScreen from './04-useRef/FocusScreen'
 // import FormWithCustomHook from './02-useEffect/FormWithCustomHook'
@@ -9,7 +10,7 @@ import TodoApp from './06-reducer/TodoApp'
 
 const HooksApp = () => {
   return (
-    <TodoApp />
+    <MainApp />
   )
 }
 
